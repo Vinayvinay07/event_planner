@@ -42,7 +42,7 @@ div.stButton > button:hover { filter:brightness(1.08); transform:translateY(-1px
 </style>
 """, unsafe_allow_html=True)
 
-GROQ_API_KEY = os.getenv("GROQ_API_KEY", "")
+GROQ_API_KEY = os.getenv("GROQ_API_KEY", "") or st.secreats.get("GROQ_API_KEY")
 COLORS = ["#6c63ff","#f472b6","#38bdf8","#34d399","#fb923c","#facc15","#a78bfa"]
 
 # ── Chart renderer (pure HTML — immune to Streamlit theme) ────────────────────
