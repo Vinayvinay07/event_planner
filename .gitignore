@@ -1,0 +1,5 @@
+.env
+eventvista.db
+__pycache__/
+*.pyc
+push_to_github.py
